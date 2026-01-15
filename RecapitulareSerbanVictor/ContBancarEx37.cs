@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RecapitulareSerbanVictor
 {
-    public class ContBancar
+    public class ContBancarEx37
     {
         //incapsulare
         private double sold;
@@ -18,7 +18,7 @@ namespace RecapitulareSerbanVictor
 
         public static int NumarConturi = 0;
 
-        public ContBancar(double soldInitial)
+        public ContBancarEx37(double soldInitial)
         {
             sold = soldInitial;
             NumarConturi++;

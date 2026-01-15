@@ -1,5 +1,5 @@
 ﻿using System.Text.RegularExpressions;
-
+using RecapitulareSerbanVictor.Capstone;
 namespace RecapitulareSerbanVictor
 {
     internal class Program
@@ -432,8 +432,8 @@ namespace RecapitulareSerbanVictor
             //Ex. 37
             static void ex37()
             {
-                ContBancar c1 = new ContBancar(1000);
-                ContBancar c2 = new ContBancar(500);
+                ContBancarEx37 c1 = new ContBancarEx37(1000);
+                ContBancarEx37 c2 = new ContBancarEx37(500);
 
                 c1.Depune(200);
                 c1.Retrage(50);
@@ -442,7 +442,7 @@ namespace RecapitulareSerbanVictor
                 c2.Retrage(600); //fonduri isnuficiente
                 c2.AfiseazaSold(); //500
 
-                Console.WriteLine($"Numar total conturi: {ContBancar.NumarConturi}");
+                Console.WriteLine($"Numar total conturi: {ContBancarEx37.NumarConturi}");
             }
 
 
